@@ -1,0 +1,20 @@
+No HYPER
+npm install cypress-file-upload --save-dev               -> Install
+
+
+NO VSCODE: EM ..support/index.js:
+import 'cypress-file-upload'
+
+
+CRIAR PASTA IMAGES EM ../fixtures
+
+
+ADICIONAR ARQUIVO DESEJADO NA PASTA IMAGES CRIADA
+
+
+NA MASSA DE TESTES: ../fixtures/deliver.json:
+adicionar > cnh: 'nome do arquivo'
+
+
+NO VSCODE: EM ..pages/arquivo.js:
+adicionar >  cy.get('input[accept^="TIPODEARQUIVO"]').attachFile('/images/' + ARRAY.NOMEDODADO)

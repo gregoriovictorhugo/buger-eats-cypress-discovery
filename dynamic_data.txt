@@ -1,0 +1,19 @@
+On HYPER:
+npm install faker --save-dev
+
+
+On factory file at ../factory:
+var faker = require('faker')
+
+
+dynamic name:
+        var firstName = faker.name.firstName()
+        var lastName = faker.name.lastname()
+
+	at data:
+	name: `${firstName}` `${lastName}`
+
+
+dynamic email:
+	at data:It will use the first name for email
+	email: faker.internet.email(firstName)
